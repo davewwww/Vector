@@ -1,0 +1,184 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "87160099fd6eb40cb2e0a35f3dd90fea",
+    "packages": [
+        {
+            "name": "dwo/tracedump",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davewwww/Tracedump.git",
+                "reference": "99ccdb294886526c354b965cd901ee743654c534"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davewwww/Tracedump/zipball/99ccdb294886526c354b965cd901ee743654c534",
+                "reference": "99ccdb294886526c354b965cd901ee743654c534",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "symfony/var-dumper": "~2.6"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Dwo\\Tracedump": "src/"
+                },
+                "files": [
+                    "src/Dwo/Tracedump/Resources/functions/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Www",
+                    "email": "davewwwo@gmail.com",
+                    "homepage": "https://github.com/davewwww"
+                }
+            ],
+            "description": ":TODO:",
+            "homepage": "https://github.com/davewwww",
+            "keywords": [
+                "dump",
+                "trace"
+            ],
+            "time": "2016-06-15 13:05:03"
+        },
+        {
+            "name": "markrogoyski/math-php",
+            "version": "v0.22.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/markrogoyski/math-php.git",
+                "reference": "6b22402b1ac3697924dd7a5ad230df0bbbe34edb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/markrogoyski/math-php/zipball/6b22402b1ac3697924dd7a5ad230df0bbbe34edb",
+                "reference": "6b22402b1ac3697924dd7a5ad230df0bbbe34edb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "satooshi/php-coveralls": "dev-master",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MathPHP\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Rogoyski",
+                    "email": "mark@rogoyski.com",
+                    "homepage": "https://github.com/markrogoyski",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Kevin Nowaczyk",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Jakob Sandberg",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "Math Library for PHP. Features descriptive statistics and regressions; Continuous and discrete probability distributions; Linear algebra with matrices and vectors, Numerical analysis; special mathematical functions; Algebra",
+            "homepage": "https://github.com/markrogoyski/math-php/",
+            "keywords": [
+                "algebra",
+                "combinatorics",
+                "distributions",
+                "linear algebra",
+                "math",
+                "mathematics",
+                "matrix",
+                "numerical analysis",
+                "probability",
+                "regressions",
+                "statistics"
+            ],
+            "time": "2017-01-29T06:16:53+00:00"
+        },
+        {
+            "name": "mcordingley/linearalgebra",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mcordingley/LinearAlgebra.git",
+                "reference": "c6df25af6e6da18d3392f6de5d7eed1f94594fd5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mcordingley/LinearAlgebra/zipball/c6df25af6e6da18d3392f6de5d7eed1f94594fd5",
+                "reference": "c6df25af6e6da18d3392f6de5d7eed1f94594fd5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": "^5.5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MCordingley\\LinearAlgebra\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Cordingley",
+                    "email": "Michael.Cordingley@gmail.com"
+                }
+            ],
+            "description": "Matrix math for PHP.",
+            "keywords": [
+                "linear-algebra",
+                "matrix"
+            ],
+            "time": "2016-11-27T19:22:16+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "dwo/tracedump": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.0"
+    },
+    "platform-dev": []
+}

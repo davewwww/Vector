@@ -1,0 +1,14 @@
+{
+  "name": "dwo/pixler",
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  },
+  "require": {
+    "php": "^7.0",
+    "mcordingley/LinearAlgebra": "^2.0",
+    "dwo/tracedump": "@dev",
+    "markrogoyski/math-php": "^0.22.0"
+  }
+}
