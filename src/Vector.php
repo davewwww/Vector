@@ -2,11 +2,11 @@
 
 class Vector
 {
+    public $pos;
     public $height;
     public $width;
-    public $pos;
-    public $value;
-    public $id;
+    private $value;
+    private $id;
 
     public function __construct(array $pos, $height, $width, $value)
     {
@@ -15,23 +15,40 @@ class Vector
         $this->width = $width;
         $this->value = $value;
         $this->id = substr(md5(uniqid(time(), true)), 0, 4);
+    }
 
+    /**
+     * @return mixed
+     */
+    public function getValue()
+    {
+        return $this->value;
     }
 
     /**
      * @return array
      */
+    public function getWidthAndHeight()
+    {
+        return [$this->height, $this->width];
+    }
+
+    /**
+     * sorted WidthAndHight
+     *
+     * @return array
+     */
     public function getDimension()
     {
-        $min = min($this->height, $this->width);
-        $max = max($this->height, $this->width);
+        $min = min($wh = $this->getWidthAndHeight());
+        $max = max($wh);
 
         return [$min, $max];
     }
 
     public function __toString()
     {
-        return '['.$this->id.']';
+        #return '['.$this->id.']';
 
         list($x, $y) = $this->pos;
 
