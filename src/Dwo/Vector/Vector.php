@@ -1,16 +1,21 @@
 <?php
 
+namespace Dwo\Vector;
+
 class Vector
 {
-    public $pos;
+    /**
+     * @var Position
+     */
+    public $position;
     public $height;
     public $width;
     private $value;
     private $id;
 
-    public function __construct(array $pos, $height, $width, $value)
+    public function __construct(Position $pos, $height, $width, $value)
     {
-        $this->pos = $pos;
+        $this->position = $pos;
         $this->height = $height;
         $this->width = $width;
         $this->value = $value;
@@ -48,10 +53,6 @@ class Vector
 
     public function __toString()
     {
-        #return '['.$this->id.']';
-
-        list($x, $y) = $this->pos;
-
-        return $this->height.'x'.$this->width.'->'.$x.'x'.$y;
+        return $this->height.'x'.$this->width.'->'. (string) $this->position;
     }
 }
