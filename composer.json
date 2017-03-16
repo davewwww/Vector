@@ -1,14 +1,25 @@
 {
-  "name": "dwo/pixler",
-  "autoload": {
-    "psr-4": {
-      "": "src/"
+  "name": "dwo/vector",
+  "description": "vector handling in a matrix",
+  "keywords": ["vector", "matrix"],
+  "homepage": "https://github.com/davewwww",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dave Www",
+      "email": "davewwwo@gmail.com",
+      "homepage": "https://github.com/davewwww"
     }
-  },
+  ],
   "require": {
-    "php": "^7.0",
-    "mcordingley/LinearAlgebra": "^2.0",
-    "dwo/tracedump": "@dev",
-    "markrogoyski/math-php": "^0.22.0"
+    "php": ">=5.3.0",
+    "symfony/yaml": "^3.2"
+  },
+  "require-dev": {
+    "dwo/tracedump": "@dev"
+  },
+  "autoload": {
+    "psr-0": { "Dwo\\Vector": "src/" }
   }
 }
